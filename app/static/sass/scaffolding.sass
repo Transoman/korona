@@ -111,6 +111,24 @@ a
     &:focus
       background-color: darken(#FF0000, 3%)
       color: #fff
+  &--black
+    max-width: 270px
+    padding:
+      top: 19px
+      bottom: 19px
+    background-color: #000
+    font-size: 14px
+    font-weight: 500
+    color: #fff
+    +r(767)
+      max-width: 240px
+      padding:
+        top: 15px
+        bottom: 15px
+      font-size: 12px
+    &:hover, &:focus
+      color: #fff
+      background-color: lighten(#000, 15%)
 
 .wrapper
   display: flex
