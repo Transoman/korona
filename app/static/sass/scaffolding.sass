@@ -1,0 +1,121 @@
+*,
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+/* Clearfix for float elements */
+.clearfix:before,
+.clearfix:after
+  content: ''
+  display: table
+
+.clearfix:after 
+  clear: both
+
+.clearfix
+  zoom: 1 /* For IE 6/7 hasLayout */
+
+
+/* Common styles */
+html
+  height: 100%
+
+body
+  margin: 0
+  padding: 0
+  height: 100%
+  min-width: 320px
+  font-family: $main-font
+  font-size: 14px
+  line-height: 1.6
+  color: $main-color
+  overflow-x: hidden
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  color: #000
+  +trans
+  &:hover
+    color: $accent
+    text-decoration: none
+  &:focus
+    color: $accent
+    text-decoration: none
+    outline: none
+
+/* Hidden element */
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  border: 0
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+/* Buttons */
+.btn
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+  max-width: 370px
+  padding: 26px 15px
+  font-family: $main-font
+  font-size: 18px
+  font-weight: 700
+  color: #000
+  text-align: center
+  background-color: $accent
+  border: 0
+  outline: none
+  text-decoration: none
+  cursor: pointer
+  user-select: none
+  transition: all .25s ease
+  text-transform: uppercase
+  border-radius: 50px
+  &:hover
+    color: #000
+    background-color: lighten($accent, 10%)
+  &:focus
+    background-color: darken($accent, 3%)
+    color: #000
+  &[disabled]
+    background-color: #e5e5e5
+    cursor: not-allowed
+    color: #fff
+  &--red
+    max-width: 200px
+    padding:
+      top: 11px
+      bottom: 11px
+    background-color: #FF0000
+    font-size: 11px
+    color: #fff
+    +r(767)
+      font-size: 9px
+      padding:
+        top: 5px
+        bottom: 5px
+      span
+        display: none
+    &:hover
+      color: #fff
+      background-color: lighten(#FF0000, 15%)
+    &:focus
+      background-color: darken(#FF0000, 3%)
+      color: #fff
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.content
+  flex: 1 0 auto

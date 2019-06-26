@@ -1,0 +1,54 @@
+header.header
+  button(type="button").nav-toggle
+    spam.nav-toggle__line
+
+  .header__top
+    .container
+      a(href="./").logo.header__logo
+        img(src="static/images/general/logo.svg", width="130", alt="Я.Корона")
+      .phone.header__phone
+        a(href="tel:88009999999").phone__tel 8800 999 99 99
+          +icon('phone', 'phone__icon')
+        a(href="#").phone__callback.btn.btn--red <span>Заказать</span> обратный звонок
+      ul.social.header__social
+        li
+          a(href="#", target="_blank")
+            +icon('fb', 'social__icon')
+        li
+          a(href="#", target="_blank")
+            +icon('vk', 'social__icon')
+        li
+          a(href="#", target="_blank")
+            +icon('instagram', 'social__icon')
+
+  .header__bottom
+    .container
+      nav.nav.header__nav
+        ul.nav-list
+          li
+            a(href="#") Почему получить Золотую Корону было сложно
+          li
+            a(href="#") Минусы брендирования
+          li
+            a(href="#") Преимущества сотрудничества
+          li
+            a(href="#") О компании
+          li
+            a(href="#") Что вы получите
+          li
+            a(href="#") Схема работы
+
+        .phone.nav__phone
+          a(href="tel:88009999999").phone__tel 8800 999 99 99
+            +icon('phone', 'phone__icon')
+
+        ul.social.nav__social
+          li
+            a(href="#", target="_blank")
+              +icon('fb', 'social__icon')
+          li
+            a(href="#", target="_blank")
+              +icon('vk', 'social__icon')
+          li
+            a(href="#", target="_blank")
+              +icon('instagram', 'social__icon')

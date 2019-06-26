@@ -1,0 +1,18 @@
+.social
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: center
+  li
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+  a
+    &:hover
+      .social__icon
+        fill: $accent
+  &__icon
+    width: 24px
+    height: 24px
+    +trans
