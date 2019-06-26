@@ -1,0 +1,118 @@
+.about
+  padding-top: 120px
+  padding-bottom: 200px
+  +r(992)
+    padding-top: 90px
+    padding-bottom: 160px
+  +r(767)
+    padding-top: 50px
+    padding-bottom: 80px
+  &__wrap
+    position: relative
+  &__container
+    position: relative
+    display: flex
+    padding: 100px 75px 100px 30px
+    background-color: #000
+    border-radius: 16px
+    overflow: hidden
+    +r(1200)
+      padding-right: 30px
+    +r(992)
+      display: block
+      padding-top: 70px
+    +r(767)
+      padding: 25px 8px 70px
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100px
+      height: 40px
+      background: url(../images/general/line-yellow.svg) repeat-x 40px center / auto 40px
+      +r(767)
+        width: 50px
+        height: 20px
+        background-size: auto 20px
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 140px
+      height: 40px
+      background: url(../images/general/line-yellow.svg) repeat-x 40px center / auto 40px
+      +r(767)
+        width: 70px
+        height: 20px
+        background-size: auto 20px
+  &__img-wrap
+    width: 53.51%
+    flex-shrink: 0
+    margin-right: 80px
+    +r(1200)
+      width: 50%
+      margin-right: 30px
+    +r(992)
+      width: auto
+      margin-right: 0
+      margin-bottom: 30px
+      text-align: center
+    +r(767)
+      margin-bottom: 25px
+  &__content
+    color: #fff
+    p
+      margin-bottom: 40px
+      font-size: 24px
+      +r(767)
+        margin-bottom: 15px
+        padding-left: 25px
+        font-size: 18px
+      span
+        font-weight: 700
+        color: $accent
+        +r(767)
+          display: block
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      +r(767)
+        padding: 0 8px
+      li
+        position: relative
+        margin-bottom: 20px
+        padding-left: 50px
+        font-size: 16px
+        +r(767)
+          margin-bottom: 15px
+          padding-left: 25px
+          font-size: 14px
+        &:last-child
+          margin-bottom: 0
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 24px
+          height: 24px
+          background: url(../images/general/check.svg) no-repeat center / contain
+          +r(767)
+            width: 16px
+            height: 16px
+  &__float-img
+    position: absolute
+    right: 20px
+    bottom: -120px
+    +r(1200)
+      max-width: 700px
+      right: 50px
+    +r(992)
+      right: 50%
+      transform: translateX(50%)
+    +r(767)
+      max-width: 340px
+      bottom: -50px
