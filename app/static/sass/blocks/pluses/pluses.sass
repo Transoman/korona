@@ -1,0 +1,100 @@
+.pluses
+  .container
+    +r(767)
+      padding: 0 8px
+  &__container
+    position: relative
+    padding: 60px 150px 80px
+    background-color: $accent
+    border-radius: 16px
+    +r(1200)
+      padding:
+        right: 70px
+        left: 70px
+    +r(767)
+      padding: 30px 10px 85px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 50px
+      width: 100px
+      height: 40px
+      background: url(../images/general/line-white.svg) no-repeat center / auto 40px
+      +r(767)
+        right: 20px
+        width: 40px
+        height: 16px
+        background-size: auto 16px
+        transform: rotate(180deg)
+    &::after
+      content: ''
+      position: absolute
+      bottom: -20px
+      right: 50px
+      width: 100px
+      height: 40px
+      background: url(../images/general/line.svg) repeat-x 0 center / auto 40px
+      +r(767)
+        display: none
+    ul
+      margin: 0 0 40px
+      padding: 0
+      list-style: none
+      li
+        position: relative
+        z-index: 1
+        margin-bottom: 15px
+        padding-left: 55px
+        font-size: 18px
+        +r(767)
+          padding-left: 35px
+          font-size: 14px
+        &::before
+          content: ''
+          position: absolute
+          left: 3px
+          top: -8px
+          width: 30px
+          height: 30px
+          border-radius: 50%
+          background-color: #fff
+          z-index: -1
+          +r(767)
+            width: 24px
+            height: 24px
+            top: 0
+        &::after
+          content: ''
+          position: absolute
+          top: 2px
+          left: 0
+          width: 22px
+          height: 22px
+          background: url(../images/general/check-2.svg) no-repeat center / contain
+          +r(767)
+            width: 18px
+            height: 18px
+            top: 8px
+        &:last-child
+          margin-bottom: 0
+    .btn
+      float: right
+      +r(767)
+        display: block
+        float: none
+        margin: 0 auto
+  &__float-img
+    position: absolute
+    bottom: -155px
+    left: 70px
+    +r(1200)
+      left: 0
+    +r(992)
+      width: 440px
+      bottom: -105px
+    +r(767)
+      left: 50%
+      bottom: -75px
+      transform: translateX(-53%)
+      width: 300px
