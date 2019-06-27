@@ -33,6 +33,10 @@ body
   line-height: 1.6
   color: $main-color
   overflow-x: hidden
+  +r(1200)
+    margin-top: 79px
+    +r(767)
+      margin-top: 48px
 
 img
   max-width: 100%
@@ -112,6 +116,7 @@ h2
   &:focus
     background-color: darken($accent, 3%)
     color: #000
+    outline: none
   &[disabled]
     background-color: #e5e5e5
     cursor: not-allowed

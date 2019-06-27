@@ -1,0 +1,21 @@
+#callback.modal
+  button(type="button").callback_close.modal__close Close
+    span.modal__close-line
+
+  h3.modal__title Обратный звонок
+
+  form.ajax-form.modal__form
+    input(type="hidden", name="subject", value="Обратный звонок")
+    .form-group
+      input(type="text", name="name", placeholder="Ваше имя", required).form-field
+    .form-group
+      input(type="tel", name="phone", placeholder="Ваш телефон",pattern="\\+7\\s\\([0-9]{3}\\)\\s\\d{3}[\\-]\\d{2}[\\-]\\d{2}", required).form-field
+    .form-group
+      button(type="submit").btn.btn--black Отправить
+
+#thanks.modal
+  button(type="button").thanks_close.modal__close Close
+    span.modal__close-line
+
+  h3.modal__title Спасибо за заказ
+  p Скоро мы Вам перезвоним!

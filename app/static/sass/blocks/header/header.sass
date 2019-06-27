@@ -1,4 +1,12 @@
 .header
+  +r(1200)
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 10
+    background-color: #fff
+    box-shadow: 0 0 10px rgba(#000, 0.1)
   &__top
     padding: 20px 0
     +r(1200)
@@ -28,6 +36,12 @@
     background-color: #000
     +r(1200)
       padding: 0
+    &.fixed
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 10
   &__social
     +r(767)
       display: none

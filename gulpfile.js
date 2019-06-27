@@ -33,7 +33,8 @@ $.gulp.task('build', $.gulp.series(
         'styles:build-min',
         'img:build',
         'js:build-min',
-        'svg'
+        'svg',
+        'php'
     )
 ));
 $.gulp.task('default', $.gulp.series(
