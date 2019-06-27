@@ -1,0 +1,93 @@
+.how-work
+  background-color: #FAFAFA
+  +r(767)
+    padding-bottom: 0
+  .section-title
+    +r(767)
+      margin-bottom: 40px
+
+.how-work-list
+  position: relative
+  z-index: 1
+  margin-bottom: 60px
+  padding: 0 200px
+  +r(1200)
+    padding: 0 80px
+  +r(992)
+    padding: 0
+  +r(767)
+    margin-bottom: 30px
+  &::before
+    content: ''
+    position: absolute
+    left: 230px
+    top: -10px
+    z-index: -1
+    width: 210px
+    height: 520px
+    background-color: $accent
+    transform: skewX(35deg)
+    +r(1200)
+      left: 110px
+    +r(992)
+      left: 50px
+      width: 160px
+      transform: skewX(28deg)
+    +r(767)
+      display: none
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 60px
+    +r(767)
+      margin-bottom: 30px
+    &:nth-child(2)
+      margin-left: 120px
+      +r(992)
+        margin-left: 100px
+      +r(767)
+        margin-left: 0
+    &:nth-child(3)
+      margin-left: 255px
+      +r(992)
+        margin-left: 195px
+      +r(767)
+        margin-left: 0
+    &:last-child
+      margin-bottom: 0
+  &__number
+    flex-shrink: 0
+    width: 120px
+    height: 120px
+    margin-right: 50px
+    border-radius: 50%
+    border: 3px solid #000
+    font-size: 60px
+    line-height: 114px
+    text-align: center
+    background-color: #fff
+    +r(767)
+      width: 56px
+      height: 56px
+      border-width: 2px
+      line-height: 52px
+      font-size: 32px
+      margin-right: 15px
+  &__content
+    font-size: 24px
+    +r(992)
+      font-size: 20px
+    +r(767)
+      font-size: 14px
+    p
+      &:last-child
+        margin-bottom: 0
+  &--second
+    padding-left: 170px
+    +r(1200)
+      padding-left: 0
+    &::before
+      top: -30px
+      left: 180px
+      +r(1200)
+        left: 10px
