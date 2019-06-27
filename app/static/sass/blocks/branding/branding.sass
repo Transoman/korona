@@ -1,0 +1,89 @@
+.branding
+  padding-bottom: 180px
+  background-color: #000
+  border-bottom: 50px solid $accent
+  +r(992)
+    padding-bottom: 130px
+  +r(767)
+    padding-bottom: 65px
+    border-width: 24px
+  &::after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: -130px
+    transform: translateX(-50%)
+    width: 880px
+    height: 275px
+    background: url(../images/content/branding-car.png) no-repeat center / contain
+    +r(992)
+      width: 590px
+      height: 185px
+      bottom: -80px
+    +r(767)
+      width: 290px
+      height: 95px
+      bottom: -55px
+  .section-title
+    margin-bottom: 75px
+    color: #fff
+    +r(767)
+      margin-bottom: 25px
+    +r(480)
+      br
+        display: none
+
+.branding-list
+  &__item
+    margin-bottom: 30px
+    font-size: 16px
+    font-weight: 300
+    color: #fff
+    +r(767)
+      margin-bottom: 25px
+      font-size: 14px
+      text-align: center
+    p
+      &:last-child
+        margin-bottom: 0
+  &__number
+    position: relative
+    font-size: 56px
+    color: $accent
+    line-height: 1
+    +r(767)
+      font-size: 48px
+    span
+      position: relative
+      display: inline-block
+      vertical-align: middle
+      +r(767)
+        &::before
+          content: ''
+          position: absolute
+          bottom: 7px
+          left: -28px
+          width: 24px
+          height: 24px
+          background: url(../images/general/line-yellow.svg) repeat-x 0 center / auto 24px
+      &::after
+        content: ''
+        position: absolute
+        bottom: 10px
+        left: 40px
+        width: 60px
+        height: 24px
+        background: url(../images/general/line-yellow.svg) repeat-x 24px center / auto 24px
+        +r(767)
+          width: 24px
+          left: 30px
+          bottom: 7px
+          background-position: 12px center
+  &__title
+    margin-bottom: 30px
+    font-family: $main-font
+    font-size: 20px
+    font-weight: 500
+    +r(767)
+      margin-bottom: 15px
+      font-size: 18px
