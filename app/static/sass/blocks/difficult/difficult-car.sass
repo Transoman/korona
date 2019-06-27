@@ -1,0 +1,383 @@
+.difficult-car
+  position: relative
+  margin-top: -50px
+  padding-left: 140px
+  max-width: none
+  +r(992)
+    margin-top: 0
+    margin-bottom: 30px
+    padding-left: 0
+  +r(767)
+    min-height: 225px
+    width: 350px
+    margin: 0 auto 30px
+    padding-top: 10px
+    //text-align: right
+  img
+    +r(767)
+      max-width: none
+      width: 350px
+      margin-left: -10px
+  &__item
+    position: absolute
+    &:nth-of-type(1)
+      //top: 100px
+      //left: 180px
+      top: 16%
+      left: 15%
+      +r(1200)
+        top: 11%
+        left: 12%
+      +r(992)
+        left: 0
+      //  top: 60px
+      //  left: 110px
+      +r(767)
+        left: 13%
+        top: 18%
+      .difficult-car
+        &__dot
+          bottom: -50px
+          right: -100px
+          +r(992)
+            right: -40px
+            bottom: -40px
+          +r(767)
+            bottom: -20px
+            right: -30px
+          &::before
+            height: 66px
+            +r(992)
+              height: 60px
+            +r(767)
+              height: 22px
+          &::after
+            content: ''
+            position: absolute
+            top: -69px
+            right: 5px
+            width: 66px
+            height: 1px
+            background-color: $accent
+            +r(992)
+              top: -63px
+              width: 25px
+            +r(767)
+              width: 22px
+              top: -23px
+              right: 2px
+    &:nth-of-type(2)
+      //top: 40px
+      //left: 480px
+      top: 6.5%
+      left: 41%
+      +r(1200)
+        top: -3.5%
+        left: 42%
+        //top: -20px
+        //left: 395px
+      +r(992)
+        top: 0
+        left: 31.5%
+      +r(767)
+        top: 8%
+      .difficult-car
+        &__dot
+          left: 25px
+          bottom: -195px
+          +r(992)
+            bottom: -155px
+          +r(767)
+            bottom: -65px
+            left: 2px
+          &::before
+            height: 168px
+            +r(992)
+              height: 130px
+            +r(767)
+              height: 55px
+    &:nth-of-type(3)
+      //top: -30px
+      //left: 590px
+      top: -4%
+      left: 50%
+      +r(1200)
+        top: -16%
+        left: 51%
+        //top: -80px
+        //left: 470px
+      +r(992)
+        top: -10%
+        left: 42%
+      +r(767)
+        top: -2%
+      .difficult-car
+        &__dot
+          left: 35px
+          bottom: -230px
+          +r(992)
+            bottom: -170px
+          +r(767)
+            left: 1px
+            bottom: -75px
+          &::before
+            height: 200px
+            +r(992)
+              height: 145px
+            +r(767)
+              height: 66px
+    &:nth-of-type(4)
+      //bottom: -10px
+      //right: 400px
+      bottom: -1%
+      right: 34%
+      +r(1200)
+        bottom: -7%
+        right: 32%
+        //bottom: -35px
+        //right: 300px
+      +r(992)
+        bottom: 0
+        right: 37%
+      +r(767)
+        bottom: 2%
+        right: 49%
+      .difficult-car
+        &__dot
+          left: 85px
+          top: -265px
+          +r(1200)
+            top: -215px
+          +r(992)
+            top: -150px
+          +r(767)
+            top: -85px
+            left: 2px
+          &::before
+            height: 235px
+            bottom: auto
+            top: 13px
+            +r(1200)
+              height: 185px
+            +r(992)
+              height: 125px
+            +r(767)
+              height: 77px
+              top: 5px
+    &:nth-of-type(5)
+      top: 0
+      //right: 380px
+      right: 33%
+      +r(1200)
+        top: -8%
+        right: 31%
+        //top: -40px
+        //right: 285px
+      +r(992)
+        top: 0
+        right: 35%
+      +r(767)
+        top: 2%
+        right: 44%
+      .difficult-car
+        &__dot
+          left: 30px
+          bottom: -265px
+          +r(1200)
+            bottom: -235px
+          +r(992)
+            bottom: -175px
+          +r(767)
+            left: 2px
+            bottom: -85px
+          &::before
+            height: 235px
+            +r(1200)
+              height: 205px
+            +r(992)
+              height: 150px
+            +r(767)
+              height: 77px
+    &:nth-of-type(6)
+      //bottom: 30px
+      //right: 260px
+      bottom: 4%
+      right: 22%
+      +r(1200)
+        right: 21%
+        //right: 190px
+      +r(992)
+        bottom: 10%
+        right: 23%
+      +r(767)
+        bottom: 3%
+        right: 31%
+      .difficult-car
+        &__dot
+          left: 25px
+          top: -305px
+          +r(1200)
+            top: -230px
+          +r(992)
+            top: -175px
+          +r(767)
+            left: 2px
+            top: -100px
+          &::before
+            height: 275px
+            bottom: auto
+            top: 13px
+            +r(1200)
+              height: 200px
+            +r(992)
+              height: 150px
+            +r(767)
+              top: 5px
+              height: 90px
+    &:nth-of-type(7)
+      //bottom: 65px
+      //right: 125px
+      bottom: 10%
+      right: 10.5%
+      +r(1200)
+        bottom: 12%
+        right: 7.5%
+        //right: 65px
+      +r(992)
+        bottom: 18%
+        right: 6.5%
+      +r(767)
+        bottom: 10%
+        right: 27%
+      .difficult-car
+        &__dot
+          left: 5px
+          top: -240px
+          +r(1200)
+            top: -170px
+          +r(992)
+            top: -120px
+          +r(767)
+            left: 2px
+            top: -75px
+          &::before
+            height: 210px
+            bottom: auto
+            top: 13px
+            +r(1200)
+              height: 140px
+            +r(992)
+              height: 100px
+            +r(767)
+              height: 67px
+              top: 5px
+    &:nth-of-type(8)
+      top: 0
+      //right: 145px
+      right: 12%
+      +r(1200)
+        top: -8%
+        right: 10%
+        //top: -40px
+        //right: 90px
+      +r(992)
+        top: 5%
+      +r(767)
+        top: 3%
+        right: 23%
+      .difficult-car
+        &__dot
+          left: 45px
+          bottom: -215px
+          +r(1200)
+            bottom: -205px
+          +r(992)
+            bottom: -115px
+          +r(767)
+            left: 2px
+            bottom: -70px
+          &::before
+            height: 190px
+            +r(1200)
+              height: 180px
+            +r(992)
+              height: 90px
+            +r(767)
+              height: 61px
+    &:nth-of-type(9)
+      //top: 70px
+      //right: 110px
+      top: 11%
+      right: 9.5%
+      +r(1200)
+        top: 14%
+        right: 8%
+        //right: 75px
+      +r(992)
+        top: 20%
+        right: 9%
+      +r(767)
+        top: 15%
+        right: 17%
+      .difficult-car
+        &__dot
+          left: 25px
+          bottom: -195px
+          +r(1200)
+            bottom: -130px
+          +r(992)
+            bottom: -90px
+          +r(767)
+            left: 2px
+            bottom: -60px
+          &::before
+            height: 165px
+            +r(1200)
+              height: 105px
+            +r(992)
+              height: 65px
+            +r(767)
+              height: 53px
+  &__title
+    margin: 0
+    font-size: 16px
+    text-align: center
+    &-mob
+      display: none
+      line-height: 1
+      +r(767)
+        display: block
+    &-desktop
+      +r(767)
+        display: none
+  &__dot
+    position: absolute
+    z-index: 1
+    display: block
+    width: 15px
+    height: 15px
+    background-color: $accent
+    border-radius: 50%
+    border: 2px solid #fff
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5)
+    +r(767)
+      width: 6px
+      height: 6px
+      border-width: 1px
+    &::before
+      content: ''
+      position: absolute
+      bottom: 13px
+      left: 5px
+      z-index: -1
+      width: 1px
+      background-color: $accent
+      +r(767)
+        bottom: 5px
+        left: 1.5px
+
+.difficult-car-list
+  display: none
+  margin-bottom: 25px
+  +r(767)
+    display: block

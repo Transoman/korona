@@ -1,3 +1,5 @@
+@import 'difficult-car'
+
 .difficult
   padding-bottom: 150px
   background-color: #F0F0F0
@@ -13,10 +15,21 @@
     border-radius: 16px
     +r(1200)
       margin-left: 0
+      margin-bottom: 30px
+    +r(992)
+      margin: 0 auto 80px
+    +r(767)
+      width: 100%
+      margin-bottom: 25px
+      padding: 15px 8px
+      border-radius: 8px
     p
       margin: 0
       font-size: 18px
       line-height: 1.3
+      +r(767)
+        font-size: 12px
+        line-height: 1.5
   &__note
     position: absolute
     left: 65px
@@ -28,6 +41,16 @@
     color: #fff
     +r(1200)
       left: 15px
+      bottom: -40px
+    +r(992)
+      position: relative
+      left: auto
+      bottom: auto
+      margin: 0 auto
+    +r(767)
+      width: 100%
+      padding: 15px 15px 20px 70px
+      border-radius: 8px
     &::before
       content: ''
       position: absolute
@@ -36,163 +59,13 @@
       width: 36px
       height: 36px
       background: url(../images/general/mark.svg) no-repeat center / contain
+      +r(767)
+        top: 15px
+        left: 15px
     p
       margin: 0
       font-size: 18px
       line-height: 1.3
-
-.difficult-car
-  position: relative
-  margin-top: -50px
-  padding-left: 140px
-  max-width: none
-  &__item
-    position: absolute
-    &:nth-of-type(1)
-      top: 100px
-      left: 180px
-      +r(1200)
-        top: 60px
-        left: 110px
-      .difficult-car
-        &__dot
-          bottom: -50px
-          right: -100px
-          &::before
-            height: 66px
-          &::after
-            content: ''
-            position: absolute
-            top: -69px
-            right: 5px
-            width: 66px
-            height: 1px
-            background-color: $accent
-    &:nth-of-type(2)
-      top: 40px
-      left: 480px
-      +r(1200)
-        top: -20px
-        left: 395px
-      .difficult-car
-        &__dot
-          left: 25px
-          bottom: -195px
-          &::before
-            height: 168px
-    &:nth-of-type(3)
-      top: -30px
-      left: 590px
-      +r(1200)
-        top: -80px
-        left: 470px
-      .difficult-car
-        &__dot
-          left: 35px
-          bottom: -230px
-          &::before
-            height: 200px
-    &:nth-of-type(4)
-      bottom: -10px
-      right: 400px
-      +r(1200)
-        bottom: -35px
-        right: 300px
-      .difficult-car
-        &__dot
-          left: 85px
-          top: -265px
-          +r(1200)
-            top: -215px
-          &::before
-            height: 235px
-            bottom: auto
-            top: 13px
-            +r(1200)
-              height: 185px
-    &:nth-of-type(5)
-      top: 0
-      right: 380px
-      +r(1200)
-        top: -40px
-        right: 285px
-      .difficult-car
-        &__dot
-          left: 30px
-          bottom: -265px
-          +r(1200)
-            bottom: -235px
-          &::before
-            height: 235px
-            +r(1200)
-              height: 205px
-    &:nth-of-type(6)
-      bottom: 30px
-      right: 260px
-      +r(1200)
-        right: 190px
-      .difficult-car
-        &__dot
-          left: 25px
-          top: -305px
-          +r(1200)
-            top: -230px
-          &::before
-            height: 275px
-            bottom: auto
-            top: 13px
-            +r(1200)
-              height: 200px
-    &:nth-of-type(7)
-      bottom: 65px
-      right: 125px
-      .difficult-car
-        &__dot
-          left: 5px
-          top: -240px
-          &::before
-            height: 210px
-            bottom: auto
-            top: 13px
-    &:nth-of-type(8)
-      top: 0
-      right: 145px
-      .difficult-car
-        &__dot
-          left: 45px
-          bottom: -215px
-          &::before
-            height: 190px
-    &:nth-of-type(9)
-      top: 70px
-      right: 110px
-      .difficult-car
-        &__dot
-          left: 25px
-          bottom: -195px
-          &::before
-            height: 165px
-  &__title
-    margin: 0
-    font-size: 16px
-    text-align: center
-    &-mob
-      display: none
-  &__dot
-    position: absolute
-    z-index: 1
-    display: block
-    width: 15px
-    height: 15px
-    background-color: $accent
-    border-radius: 50%
-    border: 2px solid #fff
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5)
-    &::before
-      content: ''
-      position: absolute
-      bottom: 13px
-      left: 5px
-      z-index: -1
-      width: 1px
-      background-color: $accent
+      +r(767)
+        font-size: 12px
+        line-height: 1.5
