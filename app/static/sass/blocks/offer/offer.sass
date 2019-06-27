@@ -1,0 +1,61 @@
+.offer
+  padding: 80px 0 70px
+  background-color: #000
+  +r(767)
+    padding-top: 40px
+    padding-bottom: 0
+  &__content
+    position: relative
+    z-index: 1
+    max-width: 630px
+    color: #fff
+    +r(992)
+      max-width: 510px
+    +r(767)
+      max-width: none
+      padding-bottom: 40px
+      text-align: center
+    h2
+      margin-bottom: 30px
+      +rmin(768)
+        font-size: 42px
+    p
+      margin-bottom: 50px
+      font-size: 20px
+      font-weight: 300
+      +r(767)
+        margin-bottom: 30px
+        font-size: 14px
+        line-height: 1.7
+      span
+        font-weight: 500
+        color: $accent
+        +r(767)
+          display: block
+  &__image
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    width: 44.5%
+    background-color: $accent
+    +r(767)
+      position: relative
+      top: auto
+      right: auto
+      bottom: auto
+      width: 100%
+    &::before
+      content: ''
+      position: absolute
+      left: -215px
+      top: 0
+      bottom: 0
+      width: 400px
+      transform: skewX(35deg)
+      background-color: #000
+      overflow: hidden
+      +r(767)
+        left: -255px
