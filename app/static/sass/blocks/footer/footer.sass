@@ -1,0 +1,33 @@
+.footer
+  padding: 50px 0
+  +r(767)
+    padding: 25px 0
+  .container
+    display: flex
+    align-items: center
+    +r(767)
+      justify-content: center
+  &__phone
+    margin-left: auto
+    margin-right: 95px
+    +r(1200)
+      margin-right: 50px
+    +r(992)
+      margin-right: 30px
+    +r(767)
+      margin-right: 15px
+      margin-left: 0
+      .phone
+        &__tel
+          margin-right: 0
+        &__icon
+          vertical-align: middle
+          margin-top: -1px
+        &__callback
+          display: none
+  &__logo
+    +r(767)
+      display: none
+  &__social
+    +r(767)
+      //display: none
