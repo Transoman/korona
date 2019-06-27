@@ -1,5 +1,7 @@
 .advantages
   padding-top: 200px
+  +r(992)
+    padding-top: 100px
   +r(767)
     padding-top: 65px
     padding-bottom: 40px
@@ -24,7 +26,7 @@
       margin-bottom: 0
     &:nth-child(even)
       flex-direction: row-reverse
-      +r(992)
+      +r(767)
         flex-direction: column
       .advantages-list
         &__img-wrap
@@ -39,7 +41,7 @@
   &__col
     width: 50%
     padding: 0 15px
-    +r(992)
+    +r(767)
       width: 100%
   &__img-wrap
     position: relative
