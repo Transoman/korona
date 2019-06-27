@@ -1,0 +1,84 @@
+.numbers
+  background: #000 url(../images/general/numbers-bg.jpg) no-repeat center / cover
+  +r(767)
+    padding-bottom: 50px
+  .section-title
+    color: #fff
+    +r(767)
+      margin-bottom: 30px
+
+.numbers-list
+  display: flex
+  justify-content: center
+  +r(767)
+    flex-direction: column
+    align-items: center
+  &__item
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 233px
+    height: 233px
+    margin-right: 100px
+    padding: 0 20px
+    background-color: #fff
+    border-radius: 50%
+    text-align: center
+    +r(992)
+      width: 200px
+      height: 200px
+      margin-right: 40px
+      padding: 0 10px
+    +r(767)
+      width: 170px
+      height: 170px
+      margin-right: 0
+      margin-bottom: 30px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 2px
+      width: 250px
+      height: 250px
+      border: 3px solid $accent
+      border-radius: 50%
+      pointer-events: none
+      +r(992)
+        width: 210px
+        height: 210px
+      +r(767)
+        width: 180px
+        height: 180px
+    &:last-child
+      margin-right: 0
+      +r(767)
+        margin-bottom: 0
+    p
+      margin: 0
+      font-weight: 500
+      text-transform: uppercase
+      +r(767)
+        font-size: 11px
+  &__title
+    margin-bottom: 10px
+    font-family: $main-font
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    +r(767)
+      font-size: 16px
+    span
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        z-index: -1
+        display: inline-block
+        height: 12px
+        width: 100%
+        background-color: $accent
