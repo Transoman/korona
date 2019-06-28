@@ -26,7 +26,16 @@
     +r(767)
       margin-right: 0
       .phone
+        &__icon
+          display: none
+    +r(480)
+      .phone
         &__tel
+          margin-right: 0
+          font-size: 14px
+          line-height: 1
+          margin-top: 5px
+        &__callback
           display: none
   &__logo
     +r(767)
