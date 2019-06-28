@@ -9,9 +9,39 @@
     .form-group
       input(type="text", name="name", placeholder="Ваше имя", required).form-field
     .form-group
-      input(type="tel", name="phone", placeholder="Ваш телефон",pattern="\\+7\\s\\([0-9]{3}\\)\\s\\d{3}[\\-]\\d{2}[\\-]\\d{2}", required).form-field
+      input(type="tel", name="phone", placeholder="Ваш телефон", pattern="\\+7\\s\\([0-9]{3}\\)\\s\\d{3}[\\-]\\d{2}[\\-]\\d{2}", required).form-field
     .form-group
       button(type="submit").btn.btn--black Отправить
+
+#request.modal
+  button(type="button").request_close.modal__close Close
+    span.modal__close-line
+
+  h3.modal__title Отправить заявку
+
+  form.ajax-form.modal__form
+    input(type="hidden", name="subject", value="Заявка на получение Золотой Короны")
+    .form-group
+      input(type="text", name="name", placeholder="Ваше имя", required).form-field
+    .form-group
+      input(type="tel", name="phone", placeholder="Ваш телефон", pattern="\\+7\\s\\([0-9]{3}\\)\\s\\d{3}[\\-]\\d{2}[\\-]\\d{2}", required).form-field
+    .form-group
+      button(type="submit").btn.btn--black Отправить
+
+#offer.modal
+  button(type="button").offer_close.modal__close Close
+    span.modal__close-line
+
+  h3.modal__title Специальное предложение!
+
+  form.ajax-form.modal__form
+    input(type="hidden", name="subject", value="Заявка на подключение к таксопарку")
+    .form-group
+      input(type="text", name="name", placeholder="Ваше имя", required).form-field
+    .form-group
+      input(type="tel", name="phone", placeholder="Ваш телефон", pattern="\\+7\\s\\([0-9]{3}\\)\\s\\d{3}[\\-]\\d{2}[\\-]\\d{2}", required).form-field
+    .form-group
+      button(type="submit").btn.btn--black Подключиться к таксопарку
 
 #thanks.modal
   button(type="button").thanks_close.modal__close Close
