@@ -81,6 +81,9 @@ jQuery(document).ready(function($) {
             var offset = $('.header').height();
           }
 
+          $('.nav-toggle').toggleClass('active');
+          $('.header__nav').toggleClass('is-active');
+
           $('html, body').animate({
             scrollTop: target.offset().top - offset
           }, 1000);
